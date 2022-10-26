@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0f2736;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50rem;
+  height: 65rem;
+  background: url(images/bg.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 2rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-circle-white {
+  width: 30rem;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+  position: absolute;
+  top: -10rem;
+  left: -8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.card:hover .card-circle-white {
+  transform: scale(1);
+}
+
+.card-circle {
+  width: 27rem;
+  height: 27rem;
+  background-color: rgb(156, 33, 17);
+  border-radius: 50%;
+  opacity: 0.9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 2rem 9rem 0;
+  transform: scale(0);
+  transition: transform 0.3s 0.1s;
+}
+
+.card:hover .card-circle {
+  transform: scale(1);
+}
+
+.social-media {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s 0.4s;
+}
+
+.card:hover .social-media {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-media i {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #041724;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.card-rect1-bg {
+  width: 35rem;
+  height: 15rem;
+  background-color: #fff;
+  opacity: 0.9;
+  transform: skew(-15deg);
+  position: absolute;
+  bottom: 0;
+  left: -40rem;
+  transition: left 0.3s 0.2s;
+}
+
+.card:hover .card-rect1-bg {
+  left: 0;
+  transition: left 0.3s;
+}
+
+.card-rect1 {
+  width: 35rem;
+  height: 15rem;
+  background-color: rgb(156, 33, 17);
+  opacity: 0.9;
+  transform: skew(-15deg);
+  position: absolute;
+  bottom: 1rem;
+  left: -41rem;
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  transition: left 0.3s;
+}
+
+.card:hover .card-rect1 {
+  left: -1rem;
+  transition: left 0.3s 0.2s;
+}
+
+.card-rect2-bg {
+  width: 14rem;
+  height: 10rem;
+  background-color: #fff;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 11rem;
+  right: -17rem;
+  transform: skew(-15deg);
+  transition: right 0.3s;
+}
+
+.card:hover .card-rect2-bg {
+  right: 7rem;
+  transition: right 0.3s 0.4s;
+}
+
+.card-rect2 {
+  width: 14rem;
+  height: 10rem;
+  background-color: #041724;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 12rem;
+  right: -16rem;
+  transform: skew(-15deg);
+  transition: right 0.3s 0.1s;
+}
+
+.card:hover .card-rect2 {
+  right: 8rem;
+  transition: right 0.3s 0.5s;
+}
+
+.card-rect3 {
+  width: 8rem;
+  height: 6rem;
+  background-color: #041724;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 13rem;
+  left: 11rem;
+  transform: skew(-15deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s;
+}
+
+.card:hover .card-rect3 {
+  opacity: 0.8;
+  visibility: visible;
+  transition: 0.1s 0.5s;
+}
+
+.card-rect4 {
+  width: 8rem;
+  height: 6rem;
+  background-color: rgb(156, 33, 17);
+  opacity: 0.9;
+  position: absolute;
+  bottom: 3rem;
+  right: -10rem;
+  transform: skew(-15deg);
+  transition: right 0.3s;
+}
+
+.card:hover .card-rect4 {
+  right: 4rem;
+  transition: 0.3s 0.4s;
+}
